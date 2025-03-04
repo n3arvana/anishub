@@ -1,4 +1,4 @@
--- GUI Painel Completo
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local RollbackButton = Instance.new("TextButton")
@@ -70,11 +70,3 @@ end)
 CloseButton.MouseButton1Click:Connect(function()
     ScreenGui:Destroy()
 end)
-
--- Código para executar via Loadstring
-if not _G.LoadedGUI then
-    _G.LoadedGUI = true
-    print("Anime Strike GUI Loaded")
-else
-    print("GUI já carregada")
-end
